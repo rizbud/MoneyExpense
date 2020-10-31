@@ -15,5 +15,7 @@ export default connect({
 
   // modal
   modal: "justify-end m-0",
-  modalContainer: "bg-white rounded-top-12 px-5 py-4"
+  modalContainer: "bg-white rounded-top-12 py-4",
+  titleModal: "text-base flex opensans-bold px-5",
+  closeBtn: "flex-end px-5"
 })

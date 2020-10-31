@@ -111,9 +111,9 @@ const TambahScreen = () => {
       swipeDirection={['down']}>
         <View style={styles.modalContainer}>
           <View style={apply('row')}>
-            <Text style={apply('text-base flex opensans-bold')}>Pilih Kategori</Text>
+            <Text style={styles.titleModal}>Pilih Kategori</Text>
             <TouchableOpacity activeOpacity={0.9} onPress={() => setModal(false)}>
-              <Icon name="x" size={25} style={apply('flex-end')} />
+              <Icon name="x" size={25} style={styles.closeBtn} />
             </TouchableOpacity>
           </View>
 
