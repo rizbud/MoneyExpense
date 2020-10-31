@@ -1,6 +1,4 @@
 import { createAppContainer } from 'react-navigation'
-import TambahScreen from '../Containers/TambahScreen'
-import HomeScreen from '../Containers/HomeScreen'
 import { createStackNavigator } from 'react-navigation-stack';
 
 import HomeScreen from '../Containers/HomeScreen'
