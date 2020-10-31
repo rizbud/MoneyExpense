@@ -1,6 +1,5 @@
+import React from 'react'
 import { createAppContainer } from 'react-navigation'
-import TambahScreen from '../Containers/TambahScreen'
-import HomeScreen from '../Containers/HomeScreen'
 import { createStackNavigator } from 'react-navigation-stack';
 
 import HomeScreen from '../Containers/HomeScreen'
@@ -8,17 +7,20 @@ import TambahScreen from '../Containers/TambahScreen'
 
 import styles from './Styles/NavigationStyles'
 
+import BackButton from '../Components/BackButton'
+
 // Manifest of possible screens
 const PrimaryNav = createStackNavigator({
-  HomeScreen: { screen: HomeScreen },
+  HomeScreen: {
+    screen: HomeScreen,
+    navigationOptions: {
+      headerShown: false
+    }
+  },
   TambahScreen: { screen: TambahScreen },
 }, {
   // Default config for all screens
-  headerMode: 'none',
-  initialRouteName: 'HomeScreen',
-  navigationOptions: {
-    headerStyle: styles.header
-  }
+  initialRouteName: 'HomeScreen'
 })
 
 export default createAppContainer(PrimaryNav)
