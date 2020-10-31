@@ -1,67 +1,60 @@
 #  MoneyExpense
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
-* Standard compliant React Native App Utilizing [Ignite](https://github.com/infinitered/ignite)
+[![js-standard-style](https://img.shields.io/badge/react--native-0.63.0-informational.svg?style=flat)](http://reactnative.dev/)
+[![js-standard-style](https://img.shields.io/badge/osmicsx-0.5.0-yellow.svg?style=flat)](http://osmicsx.github.io/docs/)
+[![js-standard-style](https://img.shields.io/badge/code--style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+[![js-standard-style](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](http://github.com/rizbud/MoneyExpense/blob/master/LICENSE)
 
-## :arrow_up: How to Setup
+<p align="center">
+  <img src="https://i.imgur.com/neSuItG.jpeg" width="360px" height="760px" />
+  <img src="https://i.imgur.com/syk8EaL.jpg" width="360px" height="760px" />
+  <img src="https://i.imgur.com/oqaXAOG.jpg" width="360px" height="760px" />
+</p>
 
-**Step 1:** git clone this repo:
+## Requirements
 
-**Step 2:** cd to the cloned repo:
+- [x] Android SDK
+- [x] JDK
+- [x] Node
+- [x] react-native-cli
 
-**Step 3:** Install the Application with `yarn` or `npm i`
+## Insallation
 
+Clone this repository
+> `$ git clone https://github.com/rizbud/MoneyExpense.git YourAppName`  
 
-## :arrow_forward: How to Run App
+Move to your app directory  
+> `$ cd YourAppName`  
 
-1. cd to the repo
-2. Run Build for either OS
-  * for iOS
-    * run `npx react-native run-ios`
-  * for Android
-    * Run Genymotion
-    * run `npx react-native run-android`
+Run this command  
+> `$ yarn install`  
 
-## :no_entry_sign: Standard Compliant
+## Runing App
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-This project adheres to Standard.  Our CI enforces this, so we suggest you enable linting to keep your project compliant during development.
+For Android  
+>`$ npx react-native run-android`  
 
-**To Lint on Commit**
+For iOS  
+>`$ npx react-native run-ios`  
 
-This is implemented using [husky](https://github.com/typicode/husky). There is no additional setup needed.
+## Jawaban Tes Pengetahuan
 
-**Bypass Lint**
+### 1. 6 bulan terakhir
+### 2
+- React navigation untuk routing dan navigasi screen
+- Redux sebagai library untuk memanajemen state
+- Redux-persist sebagai library untuk menyimpan state redux ke dalam persistent storage
+- Redux-saga sebagai middleware
+- Axios  sebagai library untuk melakukan HTTP Request
+- React native vector icons sebagai library untuk import web-icon ke dalam aplikasi react native
+- OsmiCSX untuk melakukan styling di react native agar lebih simple.
 
-If you have to bypass lint for a special commit that you will come back and clean (pushing something to a branch etc.) then you can bypass git hooks with adding `--no-verify` to your commit command.
+### 3. menulis kode dengan format yang rapi dan terstruktur dengan baik agar dapat dibaca oleh orang lain dan dapat di-maintenance dengan mudah.
 
-**Understanding Linting Errors**
-
-The linting rules are from JS Standard and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react).
-
-## :closed_lock_with_key: Secrets
-
-This project uses [react-native-config](https://github.com/luggit/react-native-config) to expose config variables to your javascript code in React Native. You can store API keys
-and other sensitive information in a `.env` file:
-
-```
-API_URL=https://myapi.com
-GOOGLE_MAPS_API_KEY=abcdefgh
-```
-
-and access them from React Native like so:
-
-```
-import Secrets from 'react-native-config'
-
-Secrets.API_URL  // 'https://myapi.com'
-Secrets.GOOGLE_MAPS_API_KEY  // 'abcdefgh'
-```
-
-The `.env` file is ignored by git keeping those secrets out of your repo.
-
-### Get started:
-1. Copy .env.example to .env
-2. Add your config variables
-3. Follow instructions at [https://github.com/luggit/react-native-config#setup](https://github.com/luggit/react-native-config#setup)
-4. Done!
+### 4. tantangan terbesarnya adalah apabila saya diminta mengerjakan suatu modul yang belum pernah saya kerjakan sebelumnya. Saya biasa menyelesaikan masalah ini dengan mencari contoh penggunaannya di internet dan membaca dokumentasi. Apabila masih belum menemukannya, saya akan bertanya ke rekan/leader/komunitas.
+  
+### 5.
+- Mengurangi ukuran aplikasi 
+- Meng-kompress ukuran gambar
+- Menghindari render komponen yang tidak diperlukan
+- Menghilangkan fitur yang tidak diperlukan
