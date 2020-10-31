@@ -65,7 +65,7 @@ const HomeScreen = (props) => {
           <Image source={require('../Icons/userIcons.png')} style={styles.userIcon} />
         </View>
         <Text style={styles.capt}>Pengeluaran Anda hari ini</Text>
-        <Text style={styles.expense}>Rp 120,000</Text>
+        <Text style={styles.expense}>Rp. 120,000</Text>
       </View>
 
       <View style={styles.category}>
@@ -85,7 +85,7 @@ const HomeScreen = (props) => {
         <Text style={styles.title}>Semua Pengeluaran</Text>
         <FlatList 
           data={ListB}
-          contentContainerStyle={apply('pb-6')}
+          contentContainerStyle={apply('pb-7')}
           keyExtractor={(i, index) => index.toString()}
           renderItem={({ item, index }) => <ItemList item={item} />}
           showsVerticalScrollIndicator={false}
@@ -93,7 +93,7 @@ const HomeScreen = (props) => {
         />
       </View>
       
-      <TouchableOpacity style={styles.add} activeOpacity={0.9}>
+      <TouchableOpacity style={styles.add} activeOpacity={0.9} onPress={() => props.navigation.navigate('TambahScreen')}>
         <Icon name="plus" size={35} color="#fff" />
       </TouchableOpacity>
 

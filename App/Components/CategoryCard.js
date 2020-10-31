@@ -13,7 +13,7 @@ const CategoryCard = (props) => {
           <Image style={styles.icon} source={item?.icon} />
         </View>
         <Text style={styles.name}>{item?.name}</Text>
-        <Text style={styles.price}>Rp{formatMoney(item?.price)}</Text>
+        <Text style={styles.price}>Rp. {formatMoney(item?.price)}</Text>
       </View>
   )
 }

@@ -6,14 +6,18 @@ export default {
   "bg-teal": { backgroundColor: '#46B5A7' },
 
   "text-gray-82": { color: "#828282" },
+  "text-gray-4f": { color: '#4f4f4f' },
 
   "rounded-12": { borderRadius: 12 },
 
   "user-icon-size": { width: 30, height: 30 },
+
   "w-20": { width: 20 },
   "w-36": { width: 36 },
   "w-64": { width: 64 },
   "w-120": { width: 120 },
+  "w-192": { width: 192 },
+
   "h-20": { height: 20 },
   "h-36": { height: 36 },
   "h-64": { height: 64 },
