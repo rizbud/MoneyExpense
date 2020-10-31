@@ -32,6 +32,8 @@
 		BE146DC646A646C192B440B0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2578546111AC40509A06E430 /* Octicons.ttf */; };
 		24F78D83B1514C07AD406486 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947C7355209441B996A6DB95 /* SimpleLineIcons.ttf */; };
 		B7770E0F0E17430BB989E6B4 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97708E8B501E43378A7629FA /* Zocial.ttf */; };
+		99CFDBD76354482EB01DFC99 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 576BE66AD98548B8809DB829 /* OpenSans-Bold.ttf */; };
+		EA1F164CEE954BF7B0AD847D /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30C7EEAB895A4BC988104A10 /* OpenSans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		2578546111AC40509A06E430 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		947C7355209441B996A6DB95 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		97708E8B501E43378A7629FA /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		576BE66AD98548B8809DB829 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../App/Fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		30C7EEAB895A4BC988104A10 /* OpenSans.ttf */ = {isa = PBXFileReference; name = "OpenSans.ttf"; path = "../App/Fonts/OpenSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,8 @@
 				2578546111AC40509A06E430 /* Octicons.ttf */,
 				947C7355209441B996A6DB95 /* SimpleLineIcons.ttf */,
 				97708E8B501E43378A7629FA /* Zocial.ttf */,
+				576BE66AD98548B8809DB829 /* OpenSans-Bold.ttf */,
+				30C7EEAB895A4BC988104A10 /* OpenSans.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -368,6 +374,8 @@
 				BE146DC646A646C192B440B0 /* Octicons.ttf in Resources */,
 				24F78D83B1514C07AD406486 /* SimpleLineIcons.ttf in Resources */,
 				B7770E0F0E17430BB989E6B4 /* Zocial.ttf in Resources */,
+				99CFDBD76354482EB01DFC99 /* OpenSans-Bold.ttf in Resources */,
+				EA1F164CEE954BF7B0AD847D /* OpenSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

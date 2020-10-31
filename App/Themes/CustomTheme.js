@@ -8,7 +8,11 @@ export default {
   "text-gray-82": { color: "#828282" },
   "text-gray-4f": { color: '#4f4f4f' },
 
+  "opensans": { fontFamily: "OpenSans" },
+  "opensans-bold": { fontFamily: "OpenSans-Bold" },
+
   "rounded-12": { borderRadius: 12 },
+  "rounded-top-12": { borderTopLeftRadius: 12, borderTopRightRadius: 12 },
 
   "user-icon-size": { width: 30, height: 30 },
 

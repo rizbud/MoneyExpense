@@ -17,7 +17,7 @@ const InputText = (props) => {
     <View style={[styles.input, underlineStyle]}>
       <Text style={styles.label}>{label}</Text>
       <View style={apply('row items-center')}>
-        <Text style={apply('text-gray-4f')}>{prefix}</Text>
+        <Text style={apply('text-gray-4f opensans')}>{prefix}</Text>
         <TextInput
           style={styles.inputText}
           onFocus={() => setFocused(true)}

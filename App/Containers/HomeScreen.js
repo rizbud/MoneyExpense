@@ -72,12 +72,12 @@ const HomeScreen = (props) => {
         <Text style={styles.title}>Pengeluaran berdasarkan kategori</Text>
         <FlatList 
           data={listA}
-          contentContainerStyle={apply('py-2')}
+          contentContainerStyle={apply('pb-2')}
           keyExtractor={(i, index) => index.toString()}
           renderItem={({ item, index }) => <CategoryCard item={item} />}
           horizontal={true}
           showsHorizontalScrollIndicator={false}
-          style={apply('mb-4')}
+          style={apply('mb-2')}
         />
       </View>
 
@@ -85,7 +85,7 @@ const HomeScreen = (props) => {
         <Text style={styles.title}>Semua Pengeluaran</Text>
         <FlatList 
           data={ListB}
-          contentContainerStyle={apply('pb-7')}
+          contentContainerStyle={apply('pb-6')}
           keyExtractor={(i, index) => index.toString()}
           renderItem={({ item, index }) => <ItemList item={item} />}
           showsVerticalScrollIndicator={false}
@@ -94,7 +94,7 @@ const HomeScreen = (props) => {
       </View>
       
       <TouchableOpacity style={styles.add} activeOpacity={0.9} onPress={() => props.navigation.navigate('TambahScreen')}>
-        <Icon name="plus" size={35} color="#fff" />
+        <Icon name="plus" size={30} color="#fff" />
       </TouchableOpacity>
 
     </SafeAreaView>
