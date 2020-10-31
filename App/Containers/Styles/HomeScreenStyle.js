@@ -10,5 +10,5 @@ export default connect({
   category: "my-3 px-5",
   title: "text-black font-bold text-base mb-2",
   list: "px-5 z-0",
-  add: "absolute bg-pink-500 p-3 rounded-full bottom-4 right-4 z-50"
+  add: "absolute bg-pink-500 p-3 rounded-full bottom-2 right-4 z-50"
 })

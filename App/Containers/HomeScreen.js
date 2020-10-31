@@ -85,7 +85,7 @@ const HomeScreen = (props) => {
         <Text style={styles.title}>Semua Pengeluaran</Text>
         <FlatList 
           data={ListB}
-          contentContainerStyle={apply('')}
+          contentContainerStyle={apply('pb-6')}
           keyExtractor={(i, index) => index.toString()}
           renderItem={({ item, index }) => <ItemList item={item} />}
           showsVerticalScrollIndicator={false}
