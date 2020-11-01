@@ -2,8 +2,8 @@ import { connect } from '../../Themes/OsmiProvider'
 
 export default connect({
   container: "bg-gray-e5 flex px-4",
-  header: "text-gray-4f opensans-bold text-lg w-192",
-  form: "mt-10 flex",
+  header: "text-gray-4f mb-4 opensans-bold text-lg w-192",
+  form: "pt-6 flex",
   catGroup: "mb-5 flex",
   label: "mb-2 opensans-bold text-gray-4f",
   selectCat: "row flex items-center",

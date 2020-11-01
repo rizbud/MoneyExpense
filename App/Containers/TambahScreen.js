@@ -9,7 +9,8 @@ import {
   Image,
   Text,
   View,
-  FlatList
+  FlatList,
+  Alert
 } from 'react-native'
 import BackButton from '../Components/BackButton'
 import InputText from '../Components/InputText'
@@ -90,6 +91,15 @@ const TambahScreen = () => {
     setModal(false)
   }
 
+  const saveForm = () => {
+    const { name, date, nominal } = form
+    if(!name || !date || !nominal) {
+      Alert.alert('Oopss..', 'Harap isi semua data')
+    } else {
+      ToastAndroid.show('Tersimpan', ToastAndroid.SHORT)
+    }
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#e5e5e5" barStyle="dark-content" />
@@ -132,12 +142,12 @@ const TambahScreen = () => {
       </Modal>
       
       <Text style={styles.header}>Tambah Pengeluaran Baru</Text>
-      <ScrollView style={styles.form}>
+      <ScrollView style={styles.form} showsVerticalScrollIndicator={false}>
         <KeyboardAvoidingView>
           <InputText 
             label="Nama pengeluaran"
             placeholder="Nasi goreng"
-            onChangeText={(value) => setForm({ ...form, nama: value })}
+            onChangeText={(value) => setForm({ ...form, name: value })}
           />
 
           <View style={styles.catGroup}>
@@ -168,10 +178,10 @@ const TambahScreen = () => {
             onChangeText={(value) => setForm({ ...form, nominal: value })}
             keyboardType="numeric"
           />
-        </KeyboardAvoidingView>
-        <TouchableOpacity style={styles.btnSave} activeOpacity={0.9} onPress={() => ToastAndroid.show('Tersimpan!', ToastAndroid.SHORT)}>
+        <TouchableOpacity style={styles.btnSave} activeOpacity={0.9} onPress={saveForm}>
           <Text style={styles.btnLabel}>Simpan</Text>
         </TouchableOpacity>
+      </KeyboardAvoidingView>
       </ScrollView>
     </SafeAreaView>
   )
