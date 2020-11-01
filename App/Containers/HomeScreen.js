@@ -5,7 +5,8 @@ import {
   Image,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  ScrollView
 } from 'react-native'
 import { connect } from 'react-redux'
 import { apply } from '../Themes/OsmiProvider'
@@ -59,44 +60,43 @@ const HomeScreen = (props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-
-      <View style={styles.header}>
-        <View style={styles.ava}>
-          <Image source={require('../Icons/userIcons.png')} style={styles.userIcon} />
+      <ScrollView
+      showsVerticalScrollIndicator={false}
+      style={styles.body}
+      >
+        <View style={styles.header}>
+          <View style={styles.ava}>
+            <Image source={require('../Icons/userIcons.png')} style={styles.userIcon} />
+          </View>
+          <Text style={styles.capt}>Pengeluaran Anda hari ini</Text>
+          <Text style={styles.expense}>Rp. 120,000</Text>
         </View>
-        <Text style={styles.capt}>Pengeluaran Anda hari ini</Text>
-        <Text style={styles.expense}>Rp. 120,000</Text>
-      </View>
 
-      <View style={styles.category}>
-        <Text style={styles.title}>Pengeluaran berdasarkan kategori</Text>
-        <FlatList 
-          data={listA}
-          contentContainerStyle={apply('pb-2')}
-          keyExtractor={(i, index) => index.toString()}
-          renderItem={({ item, index }) => <CategoryCard item={item} />}
-          horizontal={true}
-          showsHorizontalScrollIndicator={false}
-          style={apply('mb-2')}
-        />
-      </View>
+        <View style={styles.category}>
+          <Text style={styles.title}>Pengeluaran berdasarkan kategori</Text>
+          <FlatList 
+            data={listA}
+            contentContainerStyle={apply('pb-1 px-3')}
+            keyExtractor={(i, index) => index.toString()}
+            renderItem={({ item, index }) => <CategoryCard item={item} />}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+          />
+        </View>
 
-      <View style={styles.list}>
-        <Text style={styles.title}>Semua Pengeluaran</Text>
-        <FlatList 
-          data={ListB}
-          contentContainerStyle={apply('pb-6')}
-          keyExtractor={(i, index) => index.toString()}
-          renderItem={({ item, index }) => <ItemList item={item} />}
-          showsVerticalScrollIndicator={false}
-          style={[apply('px-3 rounded-12 shadow-md bg-white'), { height: 245 }]}
-        />
-      </View>
-      
+        <View style={styles.list}>
+          <Text style={styles.title}>Semua Pengeluaran</Text>
+          <View style={styles.listPengeluaran}>
+            <Text style={styles.title2}>Hari ini</Text>
+            {ListB.map((item, index) => (
+              <ItemList key={index} item={item} />
+            ))}
+          </View>
+        </View>
+      </ScrollView>
       <TouchableOpacity style={styles.add} activeOpacity={0.9} onPress={() => props.navigation.navigate('TambahScreen')}>
         <Icon name="plus" size={30} color="#fff" />
       </TouchableOpacity>
-
     </SafeAreaView>
   )
 }
