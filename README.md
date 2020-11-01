@@ -6,7 +6,7 @@
 [![js-standard-style](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](http://github.com/rizbud/MoneyExpense/blob/master/LICENSE)
 
 <p align="center">
-  <img src="https://i.imgur.com/neSuItG.jpeg" width="360px" height="760px" />
+  <img src="https://i.imgur.com/nJzZZBF.jpg" width="360px" height="886px" /><br/>
   <img src="https://i.imgur.com/syk8EaL.jpg" width="360px" height="760px" />
   <img src="https://i.imgur.com/oqaXAOG.jpg" width="360px" height="760px" />
 </p>
